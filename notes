@@ -1,0 +1,20 @@
+git clean is used to clean change that are untracked
+called without flag won't delete anyhting becaouse of safety measure
+following flags are available:
+-n displays whatt files would be deleted
+-nd display what files and folders would be deletd
+-idf - is used to clean with few optional commands that are shown in terminal
+
+git reset reverses git add
+
+git checkout -- fileName deletes all the changes from a modified file that isn't
+in stagin area
+--(hash of previous repository state) allows to go to choosen repository state
+git rm fileName removes file from repositorium, if specific file name is added after hash only the data in that 
+path will be added to our current git repository
+
+git log allows to see history of git repository changes
+flags:
+-oneline shows history in very condensed form
+
+git revert (log hash) reverses commit of specific log as a new commit
