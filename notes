@@ -37,3 +37,9 @@ git stash pop to add those changes to current branch. Adding (push -m 'Message')
 git stash apply add changes to stash but doesn't delete them in current branch
 git stash drop (stashIdentifier) clears specifies stash identifier
 git stash clear clears whole stash
+<<<<<<< HEAD
+git stash branch <branchName> creates new branch using the latest element stored in stash
+
+creating a new branch creates a new pointer to one of our snapshot one of which is created with every new commit,
+the current branch that is in working directory is determined by head pointer
+git merge <branchName> merge current branch with branchName
