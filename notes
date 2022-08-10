@@ -5,16 +5,35 @@ following flags are available:
 -nd display what files and folders would be deletd
 -idf - is used to clean with few optional commands that are shown in terminal
 
-git reset reverses git add
+git reset reverses git add, can also allow to go back to specific git state
+-mixed, everything after commit that we went to is deleted
+-soft, commit after the one we have visited to are added to staging area
+-hard
 
 git checkout -- fileName deletes all the changes from a modified file that isn't
 in stagin area
 --(hash of previous repository state) allows to go to choosen repository state
-git rm fileName removes file from repositorium, if specific file name is added after hash only the data in that 
+git rm fileName removes file from repositorium, if specific file name is added after hash only the data in that
 path will be added to our current git repository
+--nameOfBranch switches to a differnet branch
 
 git log allows to see history of git repository changes
 flags:
--oneline shows history in very condensed form
-
+-oneline (filename) -(number) shows history in very condensed form, number specifies how many commits we want to see,
+filename allows to see only commits that changed specific file, we can add --patch,--summary,stat with filename to show specific changes
+--author="NAME" all the commit by author with name NAME
+--grap="text" all commits including word 'text' in ther commit message
+--format used to specifiy in what format we want our hashes to be
 git revert (log hash) reverses commit of specific log as a new commit
+git shortlog shows commit made by each person
+
+git commit -m 'commitName' this command can also be used without -m flag which would usually open a text editor in which we
+can specify both name and description of our commit.
+
+git stash (push -m 'MESSAGE') without push command it can allow us to store changes made in one of the branches,
+for example when we've made changes in a branch we didn't want and then after switching to correct branch we can we can use
+git stash pop to add those changes to current branch. Adding (push -m 'Message') works very similiarily to pure git stash command but adds commit to the stash
+
+git stash apply add changes to stash but doesn't delete them in current branch
+git stash drop (stashIdentifier) clears specifies stash identifier
+git stash clear clears whole stash
