@@ -43,3 +43,32 @@ git stash branch <branchName> creates new branch using the latest element stored
 creating a new branch creates a new pointer to one of our snapshot one of which is created with every new commit,
 the current branch that is in working directory is determined by head pointer
 git merge <branchName> merge current branch with branchName
+git branch <branchName> creates new branch
+git branch -D <branchName> deletes branch
+snapshot is representation of state of our repository
+
+types of branches most commonly used
+Master - main branch, used to publish version the final version of the project
+Dev - used for creating the product in beta version, usually connected with some testing server
+feature - adding new feature, generally one branch for one new feature
+user - creating changes by individual person which then be added to feature
+test/bug-fixing - testing and fixing bugs
+
+in command git push origin <branchName> origin is simply a shortcut for remote address respostiory
+
+git fetch downloads latest repository from remote repository, we can then later merge the download changes
+with command git merge origin/<branchName> (but we should remain on the branch to which we fetched changes?)
+git remote add origin <originUrl> , connects our local repository with remote one
+git remote set-url origin <originUrl> , sets new origin
+git push origin <branchName>, pushes the current repository we are working in to the remote branch with branchName
+command
+"MY TEXT" >> someFile , will write 'MY TEXT' into someFile
+git push origin --delete <branchName> sends information about deleting a branch to remote repository
+fork option can be used to create a copy of a certain repository
+
+working with forked repository workflow
+
+1.  create fork (copy of repository)
+2.  on your copy create new branch usually named feature
+3.  create logic you wanna add
+4.  do pull request of the feature branch to the branch you want to update
