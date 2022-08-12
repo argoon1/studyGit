@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 test test 
 REBASE
-=======
->>>>>>> 0f056fb (t)
-=======
-test test
-REBASE DATA
->>>>>>> 5a25e44 (rebase test)
+REBASE TEST
+REBASE TEST
+
