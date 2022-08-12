@@ -85,6 +85,6 @@ git rebase <branchName> while being on some branch different than branchName we 
 upon the latest commit of branchName, it also doesn't create any new commits about changes that have been meade
 
 we can use tags to name specific commits
-commands git tag <tagName> marks current commit with tag tagName
+commands git tag (-a) (-m) <tagName> marks current commit with tag tagName -a flag allows to give information about author while -m aloows to add message
 git tag shows all tags
 git show <tagName> show commit marked with specfici tagName
