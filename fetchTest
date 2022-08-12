@@ -7,8 +7,13 @@ new branch data from rebase
 
 =======
 REB REB 
+<<<<<<< HEAD
 >>>>>>> c44fbe5 (REBASE)
 =======
 REB REB 
 rebase newBranch data
 >>>>>>> 5511bea (rebase)
+=======
+rebase newBranch data
+rebase newBranch data
+>>>>>>> 8da2fd0 (rebase)
