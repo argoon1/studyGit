@@ -1,7 +1,4 @@
-"merge";
-"merge";
-"merge";
-"merge";
-"merge";
-"merge";
-"merge";
+"conflict"
+"conflict"
+"conflict""conflict"
+"conflict""conflict"
