@@ -77,3 +77,8 @@ when mergin two branches we can have a situation when some lines might conflict,
 confliscts our selves
 
 ther might also exist a conflict due to a file beign deleted on one of the branches to solve it we can either delete the file on branch the merge is happening or use git add <fileName> to stop the deletion
+
+pull request are used to download data from external repositories to your own
+--no--ff creates new commit
+git rebase <branchName> while being on some branch different than branchName we can set the current branch as it was created
+upon the latest commit of branchName
