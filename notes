@@ -80,5 +80,11 @@ ther might also exist a conflict due to a file beign deleted on one of the branc
 
 pull request are used to download data from external repositories to your own
 --no--ff creates new commit
+
 git rebase <branchName> while being on some branch different than branchName we can set the current branch as it was created
-upon the latest commit of branchName
+upon the latest commit of branchName, it also doesn't create any new commits about changes that have been meade
+
+we can use tags to name specific commits
+commands git tag <tagName> marks current commit with tag tagName
+git tag shows all tags
+git show <tagName> show commit marked with specfici tagName
