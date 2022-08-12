@@ -1,8 +1,7 @@
-"hello";
-"hello";
-"hello";
-"hello";
-"hello";
-"hello";
-"hello";
-"hello";
+"merge";
+"merge";
+"merge";
+"merge";
+"merge";
+"merge";
+"merge";
