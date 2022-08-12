@@ -72,3 +72,8 @@ working with forked repository workflow
 2.  on your copy create new branch usually named feature
 3.  create logic you wanna add
 4.  do pull request of the feature branch to the branch you want to update
+
+when mergin two branches we can have a situation when some lines might conflict, if it happens we have to solve those
+confliscts our selves
+
+ther might also exist a conflict due to a file beign deleted on one of the branches to solve it we can either delete the file on branch the merge is happening or use git add <fileName> to stop the deletion
